@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-slate-600">
+        <section class="container mx-auto flex justify-between py-5">
+            <div>
+                <h1 class="text-4xl font-bold ">Budget <span class="text-white">2500</span></h1>
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold ">cart <span class="text-white">0</span></h1>
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold ">left <span class="text-white">6</span></h1>
+            </div>
+        </section>
+    </nav>
+    <section class="container mx-auto flex gap-5">
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 ">
+            <!-- cart1 -->
+             <div class="border  p-12 shadow-lg flex flex-col gap-2">
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart2 -->
+             <div class="border p-12  shadow-lg flex flex-col gap-2">
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart3 -->
+             <div class="border  p-12  shadow-lg flex flex-col gap-2">
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart4 -->
+             <div class="border p-12  shadow-lg flex flex-col gap-2">
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart5 -->
+             <div class="border  p-12  shadow-lg flex flex-col gap-2">
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart6 -->
+             <div class="border  p-12  shadow-lg flex flex-col gap-2">
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart7 -->
+             <div class="border  p-12  shadow-lg flex flex-col gap-2">
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart8 -->
+             <div class="border  p-12  shadow-lg flex flex-col gap-2">
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart9 -->
+             <div class="border  p-12  shadow-lg flex flex-col gap-2" >
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+            <!-- cart10 -->
+             <div class="border p-12  shadow-lg flex flex-col gap-2" >
+                <h1 class="text-2xl font-bold">Tamim iqbal</h1>
+                <h1 class="text-2xl font-bold">player price: <span>300 s</span></h1>
+                <h1 class="text-2xl font-bold">category<span>bat</span></h1>
+                <button class="cart-btn btn">Add to chart</button>
+             </div>
+        </div>
+        <div class="flex-1">
+            <!-- the chart interface -->
+             <div class="text-center">
+                <h1 class="text-4xl font-extrabold">My cart</h1>
+                <hr>
+                <div class="selected-players flex justify-evenly"  >
+                    <div class="text-lg name">Name</div>
+                    <div class="text-lg price">Price</div>
+                    <div class="text-lg catergory">Category</div>
+                </div>
+                <div id="selected-player-container">
+                </div>
+                <hr>
+                <h1 class="4xl font-extrabold">Total cost <span>0</span></h1>
+             </div>
+        </div>
+    </section>
+</body>
+</html>
