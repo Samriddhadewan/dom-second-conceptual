@@ -1,6 +1,4 @@
-const budget = getNumberFromId("budget");
-const cart = getNumberFromId("cart");
-const left = getNumberFromId("left");
+
 
 const allBtn = document.getElementsByClassName("cart-btn");
 for(let btn of allBtn){
@@ -11,6 +9,23 @@ for(let btn of allBtn){
         const name = event.target.parentNode.childNodes[1].innerText;
         const price = event.target.parentNode.childNodes[3].childNodes[1].innerText;
         const cetegory = event.target.parentNode.childNodes[5].childNodes[1].innerText;
+
+        const budget = getNumberFromId("budget");
+        const cart = getNumberFromId("cart");
+        const left = getNumberFromId("left");
+        
+        if( cart + 1 > 6 || left === 0){
+            alert("the highest limit is taken");
+            return;
+        }
+        
+         event.target.setAttribute("disabled", false)
+         event.target.parentNode.style.backgroundColor = "grey"; 
+
+       document.getElementById('budget').innerText = budget - parseInt(price);
+       document.getElementById("cart").innerText = cart + 1;
+       document.getElementById("left").innerText = left - 1;
+
 
         const div = document.createElement("div");
         const p = document.createElement("p");
